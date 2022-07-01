@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./js/jquery-3.6.0.min.js"> </script>
     <title>Instagram</title>
 </head>
 <body>
@@ -15,13 +16,13 @@
             <div class="group">
                 <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
                 <div class="profile-photo">
-                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                    <img src="./img/perfil.png" alt="foto de perfil">
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
+                <a href="#" class="instagram-login">Continue como joaofilho21</a>
                 <a href="#" class="instagram-logout">Remover conta</a>
             </div>
             <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
+                <p class="not-account">Não é joaofilho21?</p>
                 <p class="not-account">
                     <span class="link-blue">Alternar contas</span>
                     ou
@@ -37,5 +38,14 @@
             </div>
         </div>
     </div>
+    <script>
+        $(".instagram-phone").click(function() {
+            $(this).fadeOut(100);
+            $(".instagram-continue").css("width","100%");
+        })
+        $(".get-the-app").click(function() {
+            $(this).fadeOut(100);
+        })
+    </script>
 </body>
 </html>
